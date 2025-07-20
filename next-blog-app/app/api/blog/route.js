@@ -49,7 +49,8 @@ export async function POST(request){
     console.log("Blog saved")
 
     return NextResponse.json({
-        imgUrl
+        success:true,
+        msg:"Blog added"
     })
 
 
