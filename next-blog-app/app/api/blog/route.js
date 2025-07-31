@@ -12,14 +12,17 @@ export async function LoadDB() {
 
 LoadDB();
 
-
+// API ENDpoints to get all Blogs
 export async function GET(request){
+    const blogs=await BlogModel.find({});
 
     return NextResponse.json({
-        message:"API working"
+        blogs
     })
 }
 
+
+// API Endpoint For Uploading Blogs
 
 export async function POST(request){
 
